@@ -922,7 +922,7 @@ input[type="checkbox"]:focus {
 }
 
 .scroll-up {
-    background: url(/assets/arrow-scroll-up-cac9cba0b1151653824be87b5aabeb314824018ff218e00b0ac00f905cca28eb.png);
+    background: url('../img/arrow-scroll-up.png');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 16px;
@@ -1357,7 +1357,7 @@ input[type="checkbox"]:focus {
 }
 
 .home-page-hero-image > h1 {
-    background: url(/assets/venamour-name-white-402b33bd2d277f2afcc6f706353665cba6443897277eae7c2fccc3e0c615cf1a.svg) no-repeat;
+    background: url('../img/venamour-name-white.svg') no-repeat;
     background-size: 100%;
     height: 100%;
     left: 0;
@@ -1509,7 +1509,7 @@ input[type="checkbox"]:focus {
 }
 
 .footer-logo {
-    background: url(/assets/venamour-name-black-749c006989ce7604e62a8e8cee0a7105005d5315e2665aa6d1dd86ae188d72bd.svg) no-repeat;
+    background: url('../img/venamour-name-black.svg') no-repeat;
     background-size: 100%;
     display: inline-block;
     height: 10px;
@@ -1549,12 +1549,12 @@ input[type="checkbox"]:focus {
 }
 
 .footer-cell .social-icons a.facebook {
-    background-image: url("/assets/facebook-icon-9e6c823b3772330a8790fc27f177cb69b67b659c90a80692c3e6dbb85f9e1071.svg");
+    background-image: url("../img/facebook-icon.svg");
     background-size: 18px 18px
 }
 
 .footer-cell .social-icons a.twitter {
-    background-image: url("/assets/twitter-icon-2db2941144dc579a3f82eec6e1f931b0454a039fba13a09776f7865efc872b20.svg");
+    background-image: url("../img/twitter-icon.svg");
     background-size: 19px 15px;
     height: 15px;
     position: relative;
@@ -1563,12 +1563,12 @@ input[type="checkbox"]:focus {
 }
 
 .footer-cell .social-icons a.instagram {
-    background-image: url("/assets/instagram-icon-647e97aaf2e13ac0455346974ecd4fb22d5095db77af5d231d17e99a6c34561b.svg");
+    background-image: url("../img/instagram-icon.svg");
     background-size: 18px 18px
 }
 
 .footer-cell .social-icons a.pinterest {
-    background-image: url("/assets/pinterest-icon-33abc7a71c5f97e04494fb0c8d14f24d0f1ffb167cb2867d655f5ebf673ea8be.svg");
+    background-image: url("../img/pinterest-icon.svg");
     background-size: 18px 18px;
     height: 18px;
     width: 18px
