@@ -640,7 +640,7 @@ a.overlay:hover {
     }
 
     .featured .item {
-        padding: 0 0 .6em 0
+        padding: 0 0 12px 0
     }
 
     .featured .item .valign {
@@ -901,20 +901,21 @@ input[type="checkbox"]:focus {
     right: 0;
     border-top: 2px solid #000;
 }
-
+.grid-item { width: 50%; }
 @media screen and (min-width: 768px) {
     .mobile-menu-button {
         display: none
     }
+    .grid-item { width: 33.2%; }
 }
-.grid-item { width: 33.2%; }
+
 .grid {
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
 }
 .grid-item .item {
-    margin: 0 20px;
+    margin: 0 7px;
 }
 .grid img {
     width: 100%;
@@ -2093,11 +2094,21 @@ input[type="checkbox"]:focus {
     font-weight: 500;
     margin-top: 13px
 }
-
-.home .letter .aside img {
-    display: none
+.page-header.home-page.pos-menu {
+    position: fixed;
+    bottom: initial;
+    top: 0;
 }
-
+.home .letter .aside img {
+    display: none;
+    width: 150px;
+    border-right: 200px;
+}
+@media screen and (min-width: 768px) {
+    .home .letter .aside img {
+        display: inline-block;
+    }
+}
 .home .letter .letter-copy {
     z-index: 0
 }
