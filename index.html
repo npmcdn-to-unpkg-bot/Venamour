@@ -19,6 +19,9 @@
             font-family: "freight-big-pro", sans-serif;
         }
     </style>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+    <script src="js/commonJs.js"></script>
     <script>
         try {
             Typekit.load();
@@ -126,101 +129,93 @@
             <section class="featured">
                 <h1><i>Featured</i> Items</h1>
 
-                <section class="images inner max-width">
-                    <div class="item">
-                        <img src="img/Venamour_FeaturedItems_Viridian_Program.jpg" alt="">
+                <section class="inner max-width">
+                    <div class="grid">
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <div class="item">
+                                    <img src="img/Venamour_FeaturedItems_Viridian_Program.jpg" alt="">
 
-                        <a class="overlay square" href="#">
-                            <div>
-                                <i>Viridian</i><br>
-                                Floral Wreath<br>
-                                Ceremony Program
+                                    <a class="overlay square" href="#">
+                                        <div>
+                                            <i>Viridian</i><br>
+                                            Floral Wreath<br>
+                                            Ceremony Program
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </a>
-                    </div>
 
-                    <div class="item">
-                        <img src="img/Venamour_FeaturedItems_Wildflower_TableNumbers.jpg" alt="">
+                            <div class="grid-item">
+                                <div class="item">
+                                    <img src="//venamour-production.s3.amazonaws.com/images/home/featured/Venamour_FeaturedItems_Wildflower_TableNumbers.jpg">
 
-                        <a class="overlay portrait" href="#">
-                            <div>
-                                <i>Wildflower</i><br>
-                                Floral Numeral<br>
-                                Table Number
+                                    <a class="overlay portrait" href="/shop/products/wildflower-floral-numeral-table-number">
+                                        <div>
+                                            <i>Wildflower</i><br>
+                                            Floral Numeral<br>
+                                            Table Number
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </a>
-                    </div>
 
-                    <div class="item">
-                        <img src="img/Venamour_FeaturedItems_Botanical_Botanical.jpg" alt="">
+                            <div class="grid-item">
+                                <div class="item">
+                                    <img src="img/Venamour_FeaturedItems_Viridian_Program.jpg" alt="">
 
-                        <a class="overlay square" href="#">
-                            <div>
-                                <i>Botanical</i><br>
-                                Typographic Tall Card<br>
-                                Ceremony Program
+                                    <a class="overlay square" href="#">
+                                        <div>
+                                            <i>Viridian</i><br>
+                                            Floral Wreath<br>
+                                            Ceremony Program
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </a>
-                    </div>
 
-                    <div class="item">
-                        <img src="img/Venamour_FeaturedItems_Viridian_Envelope.jpg" alt="">
+                            <div class="grid-item">
+                                <div class="item">
+                                    <img src="img/Venamour_FeaturedItems_Viridian_Program.jpg" alt="">
 
-                        <a class="overlay portrait" href="#">
-                            <div>
-                                <i>Viridian</i><br>
-                                Classic<br>
-                                Invitation Envelope
+                                    <a class="overlay square" href="#">
+                                        <div>
+                                            <i>Viridian</i><br>
+                                            Floral Wreath<br>
+                                            Ceremony Program
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </a>
-                    </div>
 
-                    <div class="item">
-                        <img src="img/Venamour_FeaturedItems_Wildflower_Invitation.jpg" alt="">
+                            <div class="grid-item">
+                                <div class="item">
+                                    <img src="img/Venamour_FeaturedItems_Viridian_Program.jpg" alt="">
 
-                        <a class="overlay portrait" href="#">
-                            <div>
-                                <i>Wildflower</i><br>
-                                Lush Floral<br>
-                                Invitation
+                                    <a class="overlay square" href="#">
+                                        <div>
+                                            <i>Viridian</i><br>
+                                            Floral Wreath<br>
+                                            Ceremony Program
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </a>
-                    </div>
 
-                    <div class="item">
-                        <img src="img/Venamour_FeaturedItems_Botanical_SavetheDate.jpg" alt="">
+                            <div class="grid-item">
+                                <div class="item">
+                                    <img src="img/Venamour_FeaturedItems_Viridian_Program.jpg" alt="">
 
-                        <a class="overlay square" href="#">
-                            <div>
-                                <i>Botanical</i><br>
-                                Arranged Floral<br>
-                                Save the Date Post Card
+                                    <a class="overlay square" href="#">
+                                        <div>
+                                            <i>Viridian</i><br>
+                                            Floral Wreath<br>
+                                            Ceremony Program
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-
-                    <div class="item">
-                        <img src="img/Venamour_FeaturedItems_Botanical_Botanical.jpg" alt="">
-
-                        <a class="overlay square" href="#">
-                            <div>
-                                <i>Botanical</i><br>
-                                Typographic Tall Card<br>
-                                Ceremony Program
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="item">
-                        <img src="img/Venamour_FeaturedItems_Viridian_Envelope.jpg" alt="">
-
-                        <a class="overlay portrait" href="#">
-                            <div>
-                                <i>Viridian</i><br>
-                                Classic<br>
-                                Invitation Envelope
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </section>
             </section>
@@ -368,8 +363,5 @@
             </section>
         </footer>
     </div>
-
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="js/commonJs.js"></script>
 </body>
 </html>

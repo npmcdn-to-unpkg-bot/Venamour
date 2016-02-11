@@ -589,11 +589,11 @@ a.overlay:hover {
 }
 
 .featured .item {
-    display: inline-block;
+    display: block;
     padding: 0 0 1em 0;
     position: relative;
     text-align: center;
-    width: 100%
+    margin: 0 20px;
 }
 
 .featured .item img {
@@ -907,7 +907,18 @@ input[type="checkbox"]:focus {
         display: none
     }
 }
-
+.grid-item { width: 33.2%; }
+.grid {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+.grid-item .item {
+    margin: 0 20px;
+}
+.grid img {
+    width: 100%;
+}
 .mobile-menu-button.open-button {
     background: url('') 0 0 no-repeat;
     background-size: 17px;
