@@ -890,7 +890,16 @@ input[type="checkbox"]:focus {
     padding: 0;
     position: absolute;
     overflow: hidden;
-    text-indent: -999em
+    text-indent: -999em;
+}
+.mobile-menu-button.open-button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    right: 0;
+    border-top: 2px solid #000;
 }
 
 @media screen and (min-width: 768px) {
@@ -902,10 +911,12 @@ input[type="checkbox"]:focus {
 .mobile-menu-button.open-button {
     background: url('') 0 0 no-repeat;
     background-size: 17px;
-    height: 14px;
+    height: 20px;
     left: 20px;
     top: 19px;
-    width: 17px
+    width: 30px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
 }
 
 .mobile-menu-button.close-button {
@@ -933,6 +944,7 @@ input[type="checkbox"]:focus {
     z-index: 1000
 }
 
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
     .scroll-up {
         top: 18px
@@ -954,7 +966,7 @@ input[type="checkbox"]:focus {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 11px;
     right: 0;
     top: 0;
     width: 45px
@@ -1111,7 +1123,13 @@ input[type="checkbox"]:focus {
     height: 18px;
     width: 18px
 }
-
+.expanded {
+    display: none;
+}
+.toggle-lang {
+    width: 90px;
+    margin-right: 5px;
+}
 .cart-desktop {
     display: none
 }
@@ -1510,12 +1528,12 @@ input[type="checkbox"]:focus {
 }
 
 .footer-logo {
-    background: url('../img/venamour-name-black.svg') no-repeat;
+    background: url('../img/logo.png') no-repeat;
     background-size: 100%;
     display: inline-block;
-    height: 10px;
+    height: 32px;
     margin: 10px 0;
-    width: 170px
+    width: 200px;
 }
 
 .footer-cell ul {
@@ -2273,15 +2291,15 @@ input[type="checkbox"]:focus {
     }
 
     .home .letter .letter-copy .continue {
-        display: block;
+        display: inline-block;
         font-size: .875em;
-        margin-top: 0px;
+        margin-top: 0;
         padding-bottom: 42px
     }
 
     .home .letter .letter-copy .more {
         color: #fff;
-        display: block;
+        display: inline-block;
         font-size: .875em;
         padding-bottom: 20px
     }
