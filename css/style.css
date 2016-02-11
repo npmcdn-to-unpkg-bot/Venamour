@@ -946,10 +946,10 @@ input[type="checkbox"]:focus {
 }
 
 .v-logo {
-    background: url('../img/v_logo.svg') 0 0 no-repeat;
+    background: url('../img/v_logo.png') 0 0 no-repeat;
     background-size: 100%;
     display: block;
-    height: 14px;
+    height: 29px;
     left: 0;
     position: absolute;
     margin-left: auto;
@@ -957,14 +957,12 @@ input[type="checkbox"]:focus {
     margin-top: 20px;
     right: 0;
     top: 0;
-    width: 19px
+    width: 45px
 }
 
 @media screen and (min-width: 768px) {
     .v-logo {
-        background-size: 19px;
-        height: 17px;
-        left: 100px;
+        left: 50px;
         margin-left: 0;
         margin-right: 0
     }
@@ -1117,8 +1115,23 @@ input[type="checkbox"]:focus {
 .cart-desktop {
     display: none
 }
-
+@media screen and (min-width: 850px) {
+    .cart-desktop {
+        right: 5%;
+    }
+    .v-logo {
+        left: 100px;
+    }
+    .menu ul li {
+        margin-right: 18px;
+        margin-left: 18px;
+    }
+}
 @media screen and (min-width: 768px) {
+    .menu ul li {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
     .cart-desktop {
         background-color: transparent;
         color: #777777;
@@ -1126,7 +1139,7 @@ input[type="checkbox"]:focus {
         height: auto;
         padding-top: 15px;
         position: absolute;
-        right: 5%;
+        right: 1%;
         text-align: left;
         top: 0
     }
@@ -1155,12 +1168,6 @@ input[type="checkbox"]:focus {
     top: 18px
 }
 
-@media screen and (min-width: 768px) {
-    .mobile-cart {
-        display: none
-    }
-}
-
 .page-header {
     background-color: #dddfd9;
     height: 50px;
@@ -1178,13 +1185,6 @@ input[type="checkbox"]:focus {
 .page-header.mobile-menu-is-open {
     z-index: 9999
 }
-
-@media screen and (min-width: 768px) {
-    .page-header.mobile-menu-is-open {
-        z-index: 999
-    }
-}
-
 .page-header hgroup {
     height: 0;
     overflow: hidden
@@ -1215,14 +1215,20 @@ input[type="checkbox"]:focus {
 }
 
 @media screen and (min-width: 768px) {
+    .page-header.mobile-menu-is-open {
+        z-index: 999
+    }
+    .mobile-cart {
+        display: none
+    }
     .page-header.home-page {
         height: 75px
     }
-}
-
-@media screen and (min-width: 768px) {
     .page-header.home-page .v-logo {
-        margin-top: 33px
+        margin-top: 23px
+    }
+    .page-header.home-page .menu ul, .page-header.home-page .cart-desktop ul {
+        margin-top: 20px
     }
 }
 
@@ -1234,11 +1240,6 @@ input[type="checkbox"]:focus {
     margin-top: 20px
 }
 
-@media screen and (min-width: 768px) {
-    .page-header.home-page .menu ul, .page-header.home-page .cart-desktop ul {
-        margin-top: 20px
-    }
-}
 
 .page-header.home-page.is-fixed {
     height: 50px;
@@ -11124,4 +11125,18 @@ input[type='checkbox'] {
     text-transform: uppercase;
     width: 100%;
     -webkit-appearance: none
+}
+
+
+
+
+
+
+/*-----------NEW STYLE----------*/
+.header-main {
+    height: 100vh;
+}
+#home-page-hero-image,
+.home-page-hero-image {
+    height: 100%;
 }
