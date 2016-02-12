@@ -23,7 +23,6 @@ $(document).ready(function(){
         var scrollHeight = $(document).scrollTop() + 75,
             boxMenu = $('#page-header'),
             windowH = $(window).height();
-        console.log('111')
 
         if(scrollHeight > (windowH - 1) && !boxMenu.hasClass('pos-menu')) {
             boxMenu.addClass('pos-menu')
@@ -35,12 +34,17 @@ $(document).ready(function(){
         }
     }
 
-
     $(document).scroll(function(){
         scrollMenu();
     });
 
     $(document).resize(function(){
         scrollMenu();
+    });
+
+    $('#footer-pretext').on('click', function() {
+        $('#footer').animate({
+            'bottom': 0
+        }, 500);
     });
 });
