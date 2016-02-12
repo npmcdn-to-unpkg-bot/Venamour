@@ -2093,29 +2093,39 @@ input[type="checkbox"]:focus {
     width: 150px;
     border-right: 200px;
 }
+.footer {
+    position: fixed;
+    bottom: -275px;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+}
 @media screen and (min-width: 768px) {
     .home .letter .aside img {
         display: inline-block;
+    }
+    .footer {
+        bottom: -220px;
     }
 }
 .home .letter .letter-copy {
     z-index: 0
 }
-.footer {
-    position: fixed;
-    bottom: -220px;
-    left: 0;
-    z-index: 10000;
-    width: 100%;
-}
-.footer-pretext {
+
+.footer-pretext,
+.close-footer {
     position: absolute;
     left: 0;
     top: 5px;
     width: 100%;
     margin: 0;
     padding: 0;
+    display: none;
     text-align: center;
+}
+.active.close-footer,
+.active.footer-pretext {
+    display: block;
 }
 .footer-pretext li {
     display: inline-block;
