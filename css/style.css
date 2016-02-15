@@ -11206,6 +11206,7 @@ input[type='checkbox'] {
 
 /*-----------NEW STYLE----------*/
 .header-main {
+    overflow: hidden;
     height: 100vh;
     position: relative;
     z-index: 11111;
