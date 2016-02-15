@@ -1370,7 +1370,7 @@ input[type="checkbox"]:focus {
 }
 
 .home-page-hero-image {
-    background-image: url("//venamour-production.s3.amazonaws.com/images/home/heroes/01.jpg");
+    background-image: url("http://venamour-production.s3.amazonaws.com/images/home/heroes/01.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1379,10 +1379,11 @@ input[type="checkbox"]:focus {
     text-align: center;
     width: 100%
 }
-
+#expanded.active {
+    display: block;
+}
 .home-page-hero-image > h1 {
-    background: url('../img/venamour-name-white.svg') no-repeat;
-    background-size: 100%;
+    background: url('../img/logo.png') no-repeat center top;
     height: 100%;
     left: 0;
     margin: 0 auto;
@@ -1391,7 +1392,7 @@ input[type="checkbox"]:focus {
     text-align: center;
     text-indent: -99999px;
     top: 40%;
-    width: 80%
+    width: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -2196,12 +2197,15 @@ input[type="checkbox"]:focus {
 .home .extend {
     display: none
 }
-
+#home-page-letter-section {
+    position: relative;
+}
 @media screen and (min-width: 768px) {
     .home .extend {
         display: block;
         position: absolute;
-        height: 501px;
+        top: 0;
+        bottom: 0;
         overflow: hidden;
         z-index: -2
     }
@@ -2289,13 +2293,16 @@ input[type="checkbox"]:focus {
 
     .home .letter .letter-copy .letter-image {
         float: right;
+        overflow: hidden;
         width: 23%;
-        margin-right: 42px
+        margin-right: 42px;
+        border-radius: 300px;
     }
 
     .home .letter .letter-copy .letter-image img {
-        margin-top: 8px;
-        width: 100%
+        margin-top: 0;
+        width: 100%;
+        vertical-align: top;
     }
 
     .home .letter .letter-copy section {
@@ -11193,6 +11200,8 @@ input[type='checkbox'] {
 /*-----------NEW STYLE----------*/
 .header-main {
     height: 100vh;
+    position: relative;
+    z-index: 11111;
 }
 #home-page-hero-image,
 .home-page-hero-image {

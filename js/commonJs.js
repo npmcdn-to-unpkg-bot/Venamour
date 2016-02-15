@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('#continue').on('click', function(e){
         e.preventDefault();
 
-        $('#expanded').show();
+        $('#expanded').toggleClass('active');
     });
 
     $('#btn-open-menu').on('click', function(){
