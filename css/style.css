@@ -3,7 +3,14 @@
 @font-face {
     font-family: 'CaslonGraphiqueEF';
     src: url('../font/CaslonGraphiqueEF.eot');
-    src: url('../font/CaslonGraphiqueEF.woff') format("woff"), url('../font/CaslonGraphiqueEF.ttf') format("truetype")
+    src: url('../font/CaslonGraphiqueEF.woff') format("woff"),
+    url('../font/CaslonGraphiqueEF.ttf') format("truetype")
+}
+@font-face {
+    font-family: "brandon-grotesque", sans-serif;
+    src: url('../font/BrandonGrotesque-Medium.eot');
+    src: url('../font/BrandonGrotesque-Medium.woff') format("woff"),
+    url('../font/BrandonGrotesque-Medium.ttf') format("truetype")
 }
 
 /*! normalize.css v2.1.1 | MIT License | git.io/normalize */
