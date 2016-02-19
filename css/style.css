@@ -11206,7 +11206,6 @@ input[type='checkbox'] {
 
 /*-----------NEW STYLE----------*/
 .header-main {
-    overflow: hidden;
     height: 100vh;
     position: relative;
     z-index: 11111;
@@ -11214,4 +11213,83 @@ input[type='checkbox'] {
 #home-page-hero-image,
 .home-page-hero-image {
     height: 100%;
+}
+.list-seasons {
+    overflow: hidden;
+    padding: 0;
+    margin: 0 0 20px;
+}
+.list-seasons li {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    list-style-type: none;
+    background: #d8b8bd;
+}
+.list-seasons li.second,
+.list-seasons li.second .hide-block-text {
+    background: #bc904e;
+}
+.list-seasons li.third,
+.list-seasons li.third .hide-block-text {
+    background: #e9c5b3;
+}
+.list-seasons li.fourth,
+.list-seasons li.fourth .hide-block-text {
+    background: #b55aa1;
+}
+.list-seasons img {
+    width: 100%;
+    vertical-align: top;
+}
+.list-seasons .hide-block-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #d8b8bd;
+    visibility: hidden;
+    text-align: center;
+}
+.list-seasons li:hover .hide-block-text {
+    visibility: visible;
+}
+.table {
+    display: table;
+    width: 90%;
+    height: 100%;
+    margin: 0 5%;
+}
+.vertical-middle {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "freight-big-pro", serif;
+}
+.list-seasons h2 {
+    font-size: 24px;
+}
+.center {
+    text-align: center;
+}
+@media screen and (max-width: 767px) {
+    .list-seasons li {
+        float: none;
+        width: auto;
+        padding-bottom: 30px;
+    }
+    .list-seasons .hide-block-text {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        visibility: visible;
+    }
+    .list-seasons img {
+        display: block;
+        width: 80%;
+        margin: 50px auto 20px;
+    }
 }
