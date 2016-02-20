@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    $('.blueberry').blueberry();
+
     $('#continue').on('click', function(e){
         e.preventDefault();
 
