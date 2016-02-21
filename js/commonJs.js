@@ -70,4 +70,23 @@ $(document).ready(function(){
             'bottom': posBot
         }, 500);
     });
+
+    $(document).on('scroll', function(){
+        var footerBlock = $('#footer'),
+            scrollDocPos = $(document).scrollTop() + $(window).height(),
+            hDoc = $(document).height();
+
+        if(footerBlock.hasClass('remove-fix-footer')) {
+            if(scrollDocPos < hDoc - footerBlock.height() - 30) {
+                footerBlock.removeClass('remove-fix-footer').attr('style', '');
+                $('.close-footer').removeClass('active');
+                $('.footer-pretext').addClass('active');
+            }
+        }
+        else {
+            if(scrollDocPos === hDoc) {
+                footerBlock.addClass('remove-fix-footer');
+            }
+        }
+    });
 });

@@ -11394,3 +11394,7 @@ input[type='checkbox'] {
 .shop-load-btn {
     margin-bottom: 20px;
 }
+.footer.remove-fix-footer {
+    position: inherit;
+    bottom: auto;
+}
