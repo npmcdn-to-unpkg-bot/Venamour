@@ -11229,7 +11229,8 @@ input[type='checkbox'] {
     width: 100%;
     vertical-align: top;
 }
-.list-seasons .hide-block-text {
+.list-seasons .hide-block-text,
+.list-seasons .block-text {
     position: absolute;
     top: 0;
     left: 0;
@@ -11239,7 +11240,19 @@ input[type='checkbox'] {
     visibility: hidden;
     text-align: center;
 }
-.list-seasons li:hover .hide-block-text {
+.list-seasons .block-text {
+    background: none;
+}
+.list-seasons .block-text .table .vertical-middle .wrap {
+    display: block;
+    padding: 20px 0;
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+.list-seasons li:hover .hide-block-text,
+.list-seasons li:hover .block-text{
     visibility: visible;
 }
 .table {
@@ -11276,7 +11289,7 @@ input[type='checkbox'] {
 .samples .samples-description p {
     font-size: 16px;
 }
-.blueberry { max-width: 960px; margin: 0 auto; }
+.blueberry { margin: 0 auto; }
 .blueberry .slides {
     display: block;
     position: relative;
@@ -11289,6 +11302,7 @@ input[type='checkbox'] {
     top: 0;
     left: 0;
     overflow: hidden;
+    width: 100%;
 }
 .blueberry .slides li img {
     display: block;
@@ -11299,10 +11313,10 @@ input[type='checkbox'] {
 .blueberry .crop li img { width: auto; }
 
 .blueberry .pager {
-    height: 40px;
+    padding: 0;
     text-align: center;
 }
-.blueberry .pager li { display: inline-block; }
+.blueberry .pager li { display: inline-block; margin: 0 10px; }
 .blueberry .pager li a,
 .blueberry .pager li a span {
     display: block;
@@ -11314,6 +11328,14 @@ input[type='checkbox'] {
 }
 .blueberry .pager li.active a span { color: #ce8929; }
 @media screen and (max-width: 767px) {
+    .react-slide .category-card {
+        display: block;
+        width: 90%;
+        font-size: 14px;
+        overflow: auto;
+        max-height: 250px;
+        height: auto;
+    }
     .list-seasons li {
         float: none;
         width: auto;
@@ -11336,4 +11358,39 @@ input[type='checkbox'] {
         padding: 0;
         margin-bottom: 0;
     }
+    .blueberry .pager li a span {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .react-slide .category-card {
+        max-height: 200px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .react-slide .category-card {
+        max-height: 150px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .react-slide .category-card {
+        max-height: 100px;
+    }
+}
+.tk-adobe-caslon-pro {
+    font-family: "adobe-caslon-pro", serif;
+}
+
+.tk-brandon-grotesque {
+    font-family: "brandon-grotesque", sans-serif;
+}
+
+.tk-freight-big-pro {
+    font-family: "freight-big-pro", sans-serif;
+}
+.no-margin {
+    margin: 0;
+}
+.shop-load-btn {
+    margin-bottom: 20px;
 }
