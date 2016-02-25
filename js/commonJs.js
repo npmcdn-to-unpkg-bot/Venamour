@@ -15,6 +15,14 @@ $(document).ready(function(){
         $('#main-nav').removeClass('is-open');
     });
 
+    $('#btn-open-filter').on('click', function(){
+        $('#filter').addClass('is-open');
+    });
+
+    $('#close-filter').on('click', function(){
+        $('#filter').removeClass('is-open');
+    });
+
     setTimeout(function(){
         $('.grid').masonry({
             itemSelector: '.grid-item'

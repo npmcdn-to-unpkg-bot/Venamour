@@ -1270,13 +1270,29 @@ input[type="checkbox"]:focus {
     margin-top: 20px
 }
 
-
+#main-nav {
+    text-align: center;
+    z-index: 999999999;
+}
 .page-header.home-page.is-fixed {
     height: 50px;
     position: fixed;
     top: 0
 }
-
+.cnt-item-prod {
+    display: block;
+}
+.product-count {
+    display: block;
+    letter-spacing: .05em;
+    margin: 0 0 5px;
+    padding: 0 0 12px 9px;
+    text-align: left;
+    font-family: "freight-big-pro", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.1em;
+}
 .page-header.home-page.is-fixed .v-logo {
     margin-top: 0;
     top: 20px
@@ -5490,12 +5506,13 @@ input[type="checkbox"]:focus {
     padding: 20px 0 0 0;
     position: relative;
     margin-bottom: 10px;
+    text-align: center;
     z-index: 1001
 }
 
 @media screen and (min-width: 768px) {
     .section-title-wrapper {
-        margin-bottom: 0
+        margin-bottom: 0;
     }
 }
 
@@ -5505,6 +5522,7 @@ input[type="checkbox"]:focus {
     font-style: normal;
     letter-spacing: .4em;
     margin: 0;
+    text-transform: uppercase;
     transition: font-size 0.25s ease-out;
     -webkit-transition: font-size 0.25s ease-out;
     transition: letter-spacing 0.25s ease-out;
@@ -5698,7 +5716,13 @@ input[type="checkbox"]:focus {
 .shop-products .shop-categories {
     margin: 0
 }
-
+.list-item-slider {
+    text-align: center;
+}
+.list-item-slider li {
+    display: inline-block;
+    margin: 0 15px;
+}
 .shop-products .shop-categories a {
     border-bottom: transparent;
     font-family: "brandon-grotesque", sans-serif;
@@ -11397,4 +11421,8 @@ input[type='checkbox'] {
 .footer.remove-fix-footer {
     position: inherit;
     bottom: auto;
+}
+.full-img {
+    max-width: 100%;
+    margin-bottom: 25px;
 }

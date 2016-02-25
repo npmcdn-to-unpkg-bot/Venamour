@@ -31,32 +31,26 @@
     <script>
         try {
             Typekit.load();
-        } catch (e) {}
+        } catch (e) {
+        }
     </script>
     <link rel="stylesheet" media="all" href="css/style.css">
 </head>
 
 <body>
     <div id="outer">
-        <header class="header-main">
-            <div id="home-page-hero-image">
-                <div class="home-page-hero-image">
-                    <h1>Venamour</h1>
-
-                    <h2>Wedding Ephemera</h2>
-                </div>
-            </div>
-
+        <header>
             <div id="header" class="header-section">
-                <section class="page-header home-page" id="page-header">
+                <section class="page-header" id="page-header">
                     <div class="page-header-inner max-width">
-                        <div class="v-logo">
+                        <a href="index.html" class="v-logo">
                             <hgroup>
                                 <h1>Venamour</h1>
 
                                 <h2>Wedding Ephemera</h2>
                             </hgroup>
-                        </div>
+                        </a>
+
                         <a href="#" class="mobile-cart">
                             <span>Cart (</span>
                             <span>0</span>
@@ -90,34 +84,26 @@
             </div>
         </header>
 
-        <section class="home" id="home-page">
+        <section class="shop max-width">
+            <section class="shop-by inner samples no-margin">
+                <div class="section-title-wrapper">
+                    <h1>Botanical</h1>
+                </div>
 
-            <section class="content inner max-width">
-                <section class="left">
-                    <h1><i>View</i> Collections</h1>
-
-                    <img src="img/view-collections.jpg">
-
-                    <div class="valign">
-                        <a href="#">Discover</a>
-                    </div>
-                </section>
-
-                <section class="right">
-                    <h1><i>Shop</i> Paper Goods</h1>
-
-                    <img src="img/shop-paper-goods.jpg" alt="">
-
-                    <div class="valign">
-                        <a href="#">Shop</a>
-                    </div>
-                </section>
+                <ul class="list-item-slider">
+                    <li><a href="#">Все</a></li>
+                    <li><a href="#">Носить вместе</a></li>
+                    <li><a href="#">Семейная шкатулка</a></li>
+                    <li><a href="#">Подарок дочери</a></li>
+                    <li><a href="#">Подарок маме</a></li>
+                </ul>
+                <img class="full-img" src="img/engagement.jpg" alt="">
             </section>
 
             <section class="featured">
-                <h1><i>Featured</i> Items</h1>
-
                 <section class="inner max-width">
+                    <span class="product-count">11 продуктов</span>
+
                     <div class="grid">
                         <div class="grid-item">
                             <div class="item">
@@ -233,60 +219,9 @@
                     </div>
                 </section>
             </section>
-
-            <div id="home-page-letter-section">
-                <div>
-                    <div class="extend left"></div>
-                    <div class="extend right"></div>
-
-                    <section class="letter max-width">
-                        <div class="aside">
-                            <h2>A Love Letter</h2>
-
-                            <p>
-                                <span>from</span><br>
-                                <span>Venamour</span>
-                            </p>
-                        </div>
-
-                        <article class="letter-copy inner">
-                            <div class="letter-image">
-                                <img class="olga" src="img/olga.png" alt="olga">
-                            </div>
-
-                            <div>
-                                <section class="intro">
-                                    <p>OLGA VEISBERG is a fine jewelry brand founded by Olga Veisberg.</p>
-
-                                    <ul>
-                                        <li>Every OLGA VEISBERG piece is one of a kind, we do not work on made-to-order basis.</li>
-                                        <li>Precious and semi-precious gemstones are the focus of the design.</li>
-                                        <li>The pieces are designed and produced by skilled artisans in Kyiv, Ukraine.</li>
-                                    </ul>
-
-                                    <a href="#" class="continue" id="continue">Continue reading</a>
-                                </section>
-
-                                <section class="expanded" id="expanded">
-                                    <p>
-                                        Olga Veisberg is a successful businesswoman and a jewelry
-                                        enthusiast with a deep knowledge of the philosophy behind it.
-                                    </p>
-
-                                    <p>
-                                        She opposes conventional
-                                        approaches to jewelry: “Do not be afraid to mix everything together – silver, gold, bijoux. If
-                                        the jewelry suits you, wear it however you like. There are no forbidden combinations.”
-                                    </p>
-
-                                    <a href="#" class="more">Learn more about Venamour</a>
-                                </section>
-                            </div>
-                        </article>
-                    </section>
-                </div>
-            </div>
         </section>
+
+
 
         <footer id="footer" class="footer">
             <span class="close-footer" id="close-footer">close</span>
@@ -384,23 +319,6 @@
 
     <nav class="menu" id="main-nav">
         <button class="mobile-menu-button close-button" id="close-button">Close Menu</button>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Process</a></li>
-            <li><a href="#">Collections</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Samples</a></li>
-            <li class="login"><a href="#">Client Login</a></li>
-        </ul>
-
-        <section class="icons">
-            <a href="#" target="_blank" class="facebook"></a>
-            <a href="#" target="_blank" class="instagram"></a>
-        </section>
-    </nav>
-
-    <nav class="menu" id="main-nav2">
-        <button class="mobile-menu-button close-button" id="close-button2">Close Menu</button>
         <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Process</a></li>
