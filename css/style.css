@@ -11426,3 +11426,14 @@ input[type='checkbox'] {
     max-width: 100%;
     margin-bottom: 25px;
 }
+.wrap-filter {
+    text-align: center;
+    font-size: .75em;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+.wrap-filter .filter-text {
+    border-bottom: 2px solid #ce8929;
+    color: #ce8929;
+    cursor: pointer;
+}
