@@ -1446,7 +1446,8 @@ input[type="checkbox"]:focus {
 }
 
 .header-section {
-    position: relative
+    position: relative;
+    z-index: 1000000;
 }
 
 .page-footer {
