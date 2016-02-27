@@ -11443,6 +11443,13 @@ input[type='checkbox'] {
     .react-slide .category-card {
         max-height: 100px;
     }
+    .list-filter {
+        width: 95%;
+    }
+    .list-filter li {
+        float: none;
+        width: auto;
+    }
 }
 .tk-adobe-caslon-pro {
     font-family: "adobe-caslon-pro", serif;
