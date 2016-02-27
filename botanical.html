@@ -110,8 +110,8 @@
                 <div id="doc">
                     <div id="content">
                         <div class="blueberry">
-                            <ul class="pager">
-                                <li><a href="#"><span>Все</span></a></li>
+                            <ul class="pager" id="pager">
+                                <li class="item-all"><a href="#"><span>Все</span></a></li>
                                 <li><a href="#"><span>Носить вместе</span></a></li>
                                 <li><a href="#"><span>Семейная шкатулка</span></a></li>
                                 <li><a href="#"><span>Подарок дочери</span></a></li>
@@ -235,9 +235,13 @@
                 </div>
             </div>
 
-
             <section class="featured">
                 <section class="inner max-width">
+                    <div id="wrap-filter" class="wrap-filter">
+                        <span class="text">Фильтр</span>
+                        <span class="filter-text" id="btn-open-filter">Носить вместе</span>
+                    </div>
+
                     <span class="product-count">11 продуктов</span>
 
                     <div class="grid">
@@ -452,5 +456,19 @@
             </section>
         </footer>
     </div>
+
+    <nav class="filter-popup" id="filter">
+        <button class="mobile-menu-button close-button" id="close-filter">Close Menu</button>
+
+        <h1>Filter by</h1>
+        <hr>
+
+        <ul class="list-filter" id="list-filter">
+            <li><a href="#">Носить вместе</a></li>
+            <li><a href="#">Семейная шкатулка</a></li>
+            <li><a href="#">Подарок дочери</a></li>
+            <li><a href="#">Подарок маме</a></li>
+        </ul>
+    </nav>
 </body>
 </html>

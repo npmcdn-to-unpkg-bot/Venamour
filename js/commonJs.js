@@ -23,11 +23,12 @@ $(document).ready(function(){
         $('#filter').removeClass('is-open');
     });
 
-    setTimeout(function(){
+
+    $(window).load(function(){
         $('.grid').masonry({
             itemSelector: '.grid-item'
         });
-    }, 300);
+    });
 
     function scrollMenu(){
         var scrollHeight = $(document).scrollTop() + 75,
@@ -97,4 +98,30 @@ $(document).ready(function(){
             }
         }
     });
+
+    $('#list-filter').find('a').on('click', function(e){
+        e.preventDefault();
+
+        $('#btn-open-filter').text($(this).text());
+        $('#filter').removeClass('is-open');
+    });
+
+    $('#pager').find('a').on('click', function(e){
+        e.preventDefault();
+        var $this = $(this),
+            wrapFilter = $('#wrap-filter');
+
+        $('#btn-open-filter').text($this.text());
+
+        if($this.parent().hasClass('item-all')) {
+            if(!wrapFilter.hasClass('hide')) {
+                wrapFilter.addClass('hide');
+            }
+        }
+        else {
+            if(wrapFilter.hasClass('hide')) {
+                wrapFilter.removeClass('hide');
+            }
+        }
+    })
 });
