@@ -7256,10 +7256,7 @@ a.close-modal.close {
 .modal-window {
     background-color: #f6f6f2;
     padding: 0;
-    position: fixed;
-    left: 0;
     min-height: 100%;
-    top: 0;
     width: 100%;
     z-index: 10000
 }

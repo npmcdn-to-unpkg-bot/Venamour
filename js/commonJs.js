@@ -125,7 +125,7 @@ $(document).ready(function(){
         }
     });
 
-    $('#close-modal').on('click', function(e){
+    $('.close-modal').on('click', function(e){
         e.preventDefault();
 
         $(this).closest('.modal-window').addClass('hide');
@@ -135,5 +135,11 @@ $(document).ready(function(){
         e.preventDefault();
 
         $('#modal-detail').removeClass('hide');
+    });
+
+    $('#btn-personalization-modal').on('click', function(e){
+        e.preventDefault();
+
+        $('#personalization-modal').removeClass('hide');
     });
 });
