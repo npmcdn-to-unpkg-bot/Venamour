@@ -123,5 +123,17 @@ $(document).ready(function(){
                 wrapFilter.removeClass('hide');
             }
         }
-    })
+    });
+
+    $('#close-modal').on('click', function(e){
+        e.preventDefault();
+
+        $(this).closest('.modal-window').addClass('hide');
+    });
+
+    $('#btn-detail-modal').on('click', function(e){
+        e.preventDefault();
+
+        $('#modal-detail').removeClass('hide');
+    });
 });

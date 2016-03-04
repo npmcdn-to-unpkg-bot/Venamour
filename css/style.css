@@ -1380,7 +1380,10 @@ input[type="checkbox"]:focus {
 .page-header.is-transparent.dark .page-header-inner .menu ul li a, .page-header.is-transparent.dark .page-header-inner .cart-desktop ul li a {
     color: #000000
 }
-
+a.close-modal.close {
+    position: absolute;
+    bottom: 0;
+}
 .page-header.is-pink {
     background-color: #b55aa1
 }
@@ -7297,7 +7300,9 @@ input[type="checkbox"]:focus {
     .modal-window.details, .modal-window.personalization {
         left: 0;
         position: absolute;
-        top: 0
+        top: 0;
+        right: auto;
+
     }
 }
 
@@ -7950,7 +7955,9 @@ input[type="checkbox"]:focus {
 }
 
 .product-page .specifications .details {
-    text-align: left
+    text-align: left;
+    width: 50%;
+    right: auto;
 }
 
 .product-page .specifications .details dl:before, .product-page .specifications .details dl:after {
@@ -7961,7 +7968,9 @@ input[type="checkbox"]:focus {
 .product-page .specifications .details dl:after {
     clear: both
 }
-
+.modal-window.hide {
+    display: none;
+}
 .product-page .specifications .details dl {
     *zoom: 1
 }
@@ -8253,7 +8262,8 @@ input[type="checkbox"]:focus {
     .product-page .specs {
         float: left;
         padding-top: 173px;
-        width: 50%
+        width: 50%;
+        position: initial;
     }
 }
 
