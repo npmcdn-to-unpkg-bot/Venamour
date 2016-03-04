@@ -7320,23 +7320,17 @@ a.close-modal.close {
         display: table
     }
 
-    .modal-window.personalization .personalization-wrapper .left-column, .modal-window.personalization .personalization-wrapper .right-column {
-        display: table-cell
-    }
 
     .modal-window.personalization .personalization-wrapper .left-column {
         border-right: 1px solid #ddddd9;
         padding-right: 40px;
-        width: 30%
+        text-align: left;
     }
-
-    .modal-window.personalization .personalization-wrapper .right-column {
-        padding-left: 40px;
-        width: 70%
+    .modal-window.personalization .personalization-wrapper .intro {
+        text-align: left;
     }
 
     .modal-window.personalization .personalization-wrapper .personalization-section .features {
-        display: table;
         padding: 20px 0
     }
 
@@ -7931,10 +7925,6 @@ a.close-modal.close {
     list-style-type: none
 }
 
-.product-page .specifications {
-    padding: 0 49px 40px 49px
-}
-
 @media screen and (min-width: 768px) {
     .product-page .specifications .details, .product-page .specifications .personalization {
         z-index: 1
@@ -7949,13 +7939,14 @@ a.close-modal.close {
         padding: 30px 30px 30px 30px;
         background-position: 18px 20px
     }
+    .product-page .specifications .details {
+        text-align: left;
+        width: 50%;
+        right: auto;
+    }
 }
 
-.product-page .specifications .details {
-    text-align: left;
-    width: 50%;
-    right: auto;
-}
+
 
 .product-page .specifications .details dl:before, .product-page .specifications .details dl:after {
     content: "";
@@ -8017,8 +8008,12 @@ a.close-modal.close {
     padding-right: 35px
 }
 
-.product-page .specifications .personalization h2, .product-page .specifications .personalization p {
+.product-page .specifications .personalization h2,
+.product-page .specifications .personalization p {
     margin-top: 0
+}
+.product-page .specifications .personalization h2 {
+    text-align: left;
 }
 
 .product-page .specifications .personalization p {
@@ -8030,7 +8025,7 @@ a.close-modal.close {
     font-family: "freight-big-pro", serif;
     font-size: 1.125em;
     letter-spacing: .02em;
-    padding-top: 60px
+    margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -8055,11 +8050,6 @@ a.close-modal.close {
     text-align: left
 }
 
-.product-page .specifications .personalization .personalization-section:first-child {
-    border-bottom: 1px solid #dddfdb;
-    margin-bottom: 50px
-}
-
 @media screen and (min-width: 768px) {
     .product-page .specifications .personalization .features p {
         color: #333333;
@@ -8067,6 +8057,12 @@ a.close-modal.close {
         letter-spacing: .04em;
         margin: 0;
         padding: 0 30px 40px 0
+    }
+}
+@media screen and (max-width: 767px) {
+    .product-page .specifications .personalization .personalization-section:first-child {
+        border-bottom: 1px solid #dddfdb;
+        margin-bottom: 50px
     }
 }
 
@@ -8285,16 +8281,29 @@ a.close-modal.close {
     .product-page .specs p:nth-child(3) {
         padding-top: 56px
     }
+    .product-page .specifications .personalization .intro {
+        padding: 0 0 30px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #ddd;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .product-page .specs p {
         font-size: 1.25em;
-        line-height: 30px;
-        text-align: center;
         margin: 0 auto;
         padding-top: 54px;
-        width: 80%
+        text-align: left;
+    }
+    .personalization-wrapper .personalization-section {
+        float: left;
+        width: 50%;
+        margin-bottom: 30px;
+        padding-left: 50px;
+        border-left: 1px solid #ddd;
+    }
+    .personalization-wrapper .personalization-section:first-child {
+        border-left: none;
     }
 }
 
