@@ -38,32 +38,52 @@
 
 <body>
     <div id="outer">
-        <header class="header-main">
-            <div id="home-page-hero-image">
-                <div class="home-page-hero-image">
-                    <h1>Venamour</h1>
-
-                    <h2>Wedding Ephemera</h2>
-                </div>
-            </div>
-
+        <header>
             <div id="header" class="header-section">
-                <section class="page-header home-page" id="page-header">
+                <section class="page-header" id="page-header">
                     <div class="page-header-inner max-width">
-                        <div class="v-logo">
+                        <a href="index.html" class="v-logo">
                             <hgroup>
                                 <h1>Venamour</h1>
 
                                 <h2>Wedding Ephemera</h2>
                             </hgroup>
-                        </div>
+                        </a>
+
                         <a href="#" class="mobile-cart">
                             <span>Cart (</span>
                             <span>0</span>
                             <span>)</span>
                         </a>
 
-                        <div>
+                        <nav class="cart-desktop">
+                            <ul>
+                                <li>
+                                    <select class="toggle-lang">
+                                        <option>Dollar</option>
+                                        <option>Гривна</option>
+                                    </select>
+                                </li>
+
+                                <li>
+                                    <select class="toggle-lang">
+                                        <option>English</option>
+                                        <option>Русский</option>
+                                        <option>Українська</option>
+                                    </select>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span>Cart (</span>
+                                        <span>0</span>
+                                        <span>)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="wrap-nav">
                             <button class="mobile-menu-button open-button" id="btn-open-menu">Open Menu</button>
 
                             <nav class="menu" id="main-nav">
@@ -72,7 +92,7 @@
                                     <li><a href="#">About</a></li>
                                     <li><a href="#">Process</a></li>
                                     <li><a href="#">Collections</a></li>
-                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
                                     <li><a href="#">Samples</a></li>
                                     <li class="login"><a href="#">Client Login</a></li>
                                 </ul>
@@ -83,25 +103,6 @@
                                 </section>
                             </nav>
                         </div>
-
-                        <nav class="cart-desktop">
-                            <ul>
-                                <li>
-                                    <select class="toggle-lang">
-                                        <option>English</option>
-                                        <option>Русский</option>
-                                        <option>Українська</option>
-                                    </select>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span>Cart (</span>
-                                        <span>0</span>
-                                        <span>)</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
                     </div>
                 </section>
             </div>
