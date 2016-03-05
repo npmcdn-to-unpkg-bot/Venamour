@@ -8418,7 +8418,7 @@ a.close-modal.close {
 }
 
 .product-page .image-container {
-    width: 50%;
+    position: relative;
     margin: 0 auto;
     overflow: hidden
 }
