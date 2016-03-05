@@ -7574,12 +7574,6 @@ a.close-modal.close {
     width: 100%
 }
 
-@media screen and (min-width: 1024px) {
-    .product-page .bottom img {
-        width: 70%
-    }
-}
-
 .product-page .bottom .bottom-left, .product-page .bottom .bottom-right {
     padding: 0 60px
 }
@@ -8435,7 +8429,13 @@ a.close-modal.close {
 .product-page .image-container {
     *zoom: 1
 }
-
+.item-page-feature .grid-item {
+    width: 100%;
+}
+.item-page-feature .item {
+    max-width: 320px;
+    margin: 0 auto;
+}
 .product-page .each-step {
     background-color: #ffffff;
     position: relative;
