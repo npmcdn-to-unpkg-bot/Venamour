@@ -8429,6 +8429,9 @@ a.close-modal.close {
 .product-page .image-container {
     *zoom: 1
 }
+.item-page-feature {
+    background: #fff;
+}
 .item-page-feature .grid-item {
     width: 100%;
 }
