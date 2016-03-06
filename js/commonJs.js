@@ -142,4 +142,17 @@ $(document).ready(function(){
 
         $('#personalization-modal').removeClass('hide');
     });
+
+    var flagQuestion = true;
+    $('.question-js').on('click', function(e){
+        e.preventDefault();
+
+        if(flagQuestion) {
+            flagQuestion = false;
+
+            $(this).parent().find('.answer').slideToggle(400, function(){
+                flagQuestion = true;
+            });
+        }
+    });
 });

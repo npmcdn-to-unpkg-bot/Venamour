@@ -992,6 +992,9 @@ input[type="checkbox"]:focus {
 
 @media screen and (min-width: 768px) {
     .v-logo {
+        float: left;
+        position: relative;
+        z-index: 9999999999;
         left: 50px;
         margin-left: 0;
         margin-right: 0
@@ -2533,7 +2536,7 @@ a.close-modal.close {
 
 .about {
     background-color: #f6f6f2;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 0
 }
 
@@ -2570,7 +2573,6 @@ a.close-modal.close {
 }
 
 .about .about-venamour {
-    background-color: #c086ab;
     padding: 30px
 }
 
@@ -2790,11 +2792,12 @@ a.close-modal.close {
     margin: 0 0 25px 0
 }
 
-.about .feed .instagram > a > img, .about .feed .pinterest > a > img {
+.about .feed .instagram > a > img,
+.about .feed .pinterest > a > img {
     display: block;
     float: left;
     padding-bottom: 5px;
-    width: 50%
+    width: 25%
 }
 
 .about .feed .instagram > a > img:nth-child(odd), .about .feed .pinterest > a > img:nth-child(odd) {
@@ -2852,7 +2855,8 @@ a.close-modal.close {
 }
 
 .about .faq .answer {
-    width: 90%
+    width: 90%;
+    display: none;
 }
 
 .about .faq .answer.show {
@@ -2879,10 +2883,6 @@ a.close-modal.close {
         font-size: .75em
     }
 
-    .about .about-venamour {
-        padding: 75px 0 0 0
-    }
-
     .about .about-venamour:before, .about .about-venamour:after {
         content: "";
         display: table
@@ -2897,10 +2897,10 @@ a.close-modal.close {
     }
 
     .about .about-venamour p.top {
-        font-size: 1.875em;
-        padding-bottom: 60px;
-        margin-left: 100px;
-        margin-right: 100px
+        font-size: 1.5em;
+        padding: 0 0 30px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #ddd;
     }
 
     .about .about-venamour .left, .about .about-venamour .right {
@@ -2936,8 +2936,6 @@ a.close-modal.close {
 
     .about .feed .instagram, .about .feed .pinterest {
         border: none;
-        float: left;
-        width: 50%
     }
 
     .about .feed .instagram {
@@ -7347,6 +7345,7 @@ a.close-modal.close {
         *zoom: 1
     }
 
+    .about .personalization-wrapper .feature-section,
     .modal-window.personalization .personalization-wrapper .personalization-section .feature-section {
         display: table-cell;
         vertical-align: top;
@@ -8010,7 +8009,8 @@ a.close-modal.close {
     text-align: left;
 }
 
-.product-page .specifications .personalization p {
+.product-page .specifications .personalization p,
+.about .personalization-wrapper p {
     font-family: "brandon-grotesque", sans-serif;
     font-size: .875em
 }
@@ -8045,7 +8045,7 @@ a.close-modal.close {
 }
 
 @media screen and (min-width: 768px) {
-    .product-page .specifications .personalization .features p {
+    .personalization .features p {
         color: #333333;
         font-size: .875em;
         letter-spacing: .04em;
@@ -8071,6 +8071,7 @@ a.close-modal.close {
 }
 
 @media screen and (min-width: 768px) {
+    .about .personalization-wrapper .feature-section:first-child,
     .product-page .specifications .personalization .features .feature-section:first-of-type {
         width: 38%
     }
@@ -8079,12 +8080,14 @@ a.close-modal.close {
         width: 28%
     }
 
+    .about .personalization-wrapper .feature-section figure,
     .product-page .specifications .personalization .features .feature-section:nth-child(2) figure {
         margin-top: -10px;
         max-width: 150px;
         width: 100%
     }
 
+    .about .personalization-wrapper .feature-section:last-child,
     .product-page .specifications .personalization .features .feature-section:last-child {
         width: 34%
     }
@@ -8225,7 +8228,8 @@ a.close-modal.close {
     }
 }
 
-.product-page .specifications img {
+.product-page .specifications img,
+.about .personalization-wrapper .feature-section img {
     width: 100%
 }
 
@@ -8286,7 +8290,6 @@ a.close-modal.close {
     .product-page .specs p {
         font-size: 1.25em;
         margin: 0 auto;
-        padding-top: 54px;
         text-align: left;
     }
     .personalization-wrapper .personalization-section {
@@ -8296,7 +8299,7 @@ a.close-modal.close {
         padding-left: 50px;
         border-left: 1px solid #ddd;
     }
-    .personalization-wrapper .personalization-section:first-child {
+    .personalization-wrapper .personalization-section:nth-child(2n + 1) {
         border-left: none;
     }
 }
