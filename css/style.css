@@ -2583,7 +2583,7 @@ a.close-modal.close {
 
 .about .about-venamour p.top {
     border-bottom: 1px solid #000;
-    font-size: 1.5em;
+    font-size: 1em;
     padding-bottom: 30px
 }
 
@@ -2797,7 +2797,7 @@ a.close-modal.close {
     display: block;
     float: left;
     padding-bottom: 5px;
-    width: 25%
+    width: 50%
 }
 
 .about .feed .instagram > a > img:nth-child(odd), .about .feed .pinterest > a > img:nth-child(odd) {
@@ -2879,6 +2879,10 @@ a.close-modal.close {
 }
 
 @media screen and (min-width: 768px) {
+    .about .feed .instagram > a > img,
+    .about .feed .pinterest > a > img {
+        width: 25%
+    }
     .about h3 {
         font-size: .75em
     }
@@ -8230,7 +8234,8 @@ a.close-modal.close {
 
 .product-page .specifications img,
 .about .personalization-wrapper .feature-section img {
-    width: 100%
+    width: 150px;
+    margin: 20px 0 40px;
 }
 
 .product-page .specifications .button a {
@@ -8239,6 +8244,11 @@ a.close-modal.close {
 }
 
 @media screen and (min-width: 768px) {
+    .product-page .specifications img,
+    .about .personalization-wrapper .feature-section img {
+        width: 100%;
+        margin: 0;
+    }
     .product-page .specifications .button a {
         font-size: .75em
     }
