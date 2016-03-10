@@ -1,6 +1,4 @@
 $(document).ready(function(){
-    $('.blueberry').blueberry();
-
     $('#continue').on('click', function(e){
         e.preventDefault();
 
@@ -28,6 +26,8 @@ $(document).ready(function(){
         $('.grid').masonry({
             itemSelector: '.grid-item'
         });
+
+        $('.blueberry').blueberry();
     });
 
     function scrollMenu(){

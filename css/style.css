@@ -1452,7 +1452,7 @@ a.close-modal.close {
 }
 
 .home-page-hero-image {
-    background-image: url("http://venamour-production.s3.amazonaws.com/images/home/heroes/01.jpg");
+    background-image: url("../img/header1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1971,18 +1971,10 @@ a.close-modal.close {
 }
 
 .react-slide .category-card {
-    background-color: #fff;
-    height: 110px;
-    display: table;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
+    float: left;
     padding: 10px;
-    position: absolute;
-    right: 0;
     text-align: center;
-    top: 13%;
-    width: 70%
+    width: 50%
 }
 
 @media screen and (max-width: 320px) {
@@ -1993,11 +1985,7 @@ a.close-modal.close {
 
 @media screen and (min-width: 768px) {
     .react-slide .category-card {
-        height: 60px;
         padding: 30px;
-        top: auto;
-        bottom: 35px;
-        width: 95%
     }
 }
 
@@ -5452,12 +5440,18 @@ a.close-modal.close {
 }
 
 .shop .shop-by .react-slide {
-    margin-bottom: 25px
+    overflow: hidden;
+    margin-bottom: 25px;
+    background: #fff;
+}
+.shop .shop-by .react-slide a {
+    display: block;
 }
 
 @media screen and (min-width: 768px) {
     .shop .shop-by .react-slide {
-        margin-bottom: 0
+        margin-bottom: 0;
+        min-height: 100px;
     }
 }
 
@@ -11394,6 +11388,7 @@ input[type='checkbox'] {
     display: block;
     position: relative;
     overflow: hidden;
+    height: auto !important;
     margin: 0;
     padding: 0;
 }
@@ -11403,11 +11398,13 @@ input[type='checkbox'] {
     left: 0;
     overflow: hidden;
     width: 100%;
+
 }
 .blueberry .slides li img {
     display: block;
-    width: 100%;
+    width: 50%;
     max-width: none;
+    float: left;
 }
 .blueberry .slides li.active { display: block; position: relative; }
 .blueberry .crop li img { width: auto; }
@@ -11429,12 +11426,7 @@ input[type='checkbox'] {
 .blueberry .pager li.active a span { color: #ce8929; }
 @media screen and (max-width: 767px) {
     .react-slide .category-card {
-        display: block;
-        width: 90%;
         font-size: 14px;
-        overflow: auto;
-        max-height: 250px;
-        height: auto;
     }
     .list-seasons li {
         float: none;
@@ -11462,20 +11454,7 @@ input[type='checkbox'] {
         font-size: 14px;
     }
 }
-@media screen and (max-width: 550px) {
-    .react-slide .category-card {
-        max-height: 200px;
-    }
-}
-@media screen and (max-width: 450px) {
-    .react-slide .category-card {
-        max-height: 150px;
-    }
-}
 @media screen and (max-width: 400px) {
-    .react-slide .category-card {
-        max-height: 100px;
-    }
     .list-filter {
         width: 95%;
     }
