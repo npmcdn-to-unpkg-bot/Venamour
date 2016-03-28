@@ -23,11 +23,13 @@
     <link rel="icon" type="image/png" sizes="96x96" href="icon.ico/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icon.ico/favicon-16x16.png">
     <link rel="manifest" href="icon.ico/manifest.json">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" media="all" href="css/jcarousel.responsive.css">
     <link rel="stylesheet" media="all" href="css/style.css">
 
     <script src="js/asb5ktd.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
     <script src="js/jquery.blueberry.js"></script>
     <script src="js/jquery.jcarousel.min.js"></script>
@@ -476,11 +478,208 @@
         <hr>
 
         <ul class="list-filter" id="list-filter">
-            <li><a href="#">Носить вместе</a></li>
-            <li><a href="#">Семейная шкатулка</a></li>
-            <li><a href="#">Подарок дочери</a></li>
-            <li><a href="#">Подарок маме</a></li>
+            <li>
+                <span>Семейные ценности</span>
+
+                <ul class="sub-menu">
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Носить вместе</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Семейная шкатулка</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Подарок дочери</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Подарок маме</span>
+                        </label>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <span>Благодарность себе</span>
+
+                <ul class="sub-menu">
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Приятные мелочи</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Я - молодец</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Подчеркнуть статус</span>
+                        </label>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <span>Внутреннее состояние</span>
+
+                <ul class="sub-menu">
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Романтичная</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Бизнес леди</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Выделяющаяся</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Умиротворенная</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Роковая</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Свободолюбивая</span>
+                        </label>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <span>Символ любви</span>
+
+                <ul class="sub-menu">
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Знак внимания</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Влюбленность</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Признание в любви</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Растопить лед</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Благодарность за то, что ты рядом</span>
+                        </label>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <span>Комфорт и уют</span>
+
+                <ul class="sub-menu">
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Универсальность</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Тепло</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Единение с природой</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Изящество и простота</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Удобство</span>
+                        </label>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <span>Цена</span>
+
+                <p>
+                    <span id="amount" style="font-weight:bold;"></span>
+                </p>
+                <div id="slider-range"></div>
+            </li>
         </ul>
+
+        <button id="filter-accept" class="filter-accept">Принять</button>
     </nav>
 </body>
 </html>
