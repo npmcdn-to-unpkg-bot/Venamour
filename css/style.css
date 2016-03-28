@@ -1121,7 +1121,7 @@ input[type="checkbox"]:focus {
 }
 .filter-accept {
     display: block;
-    width: 250px;
+    width: 250px !important;
     height: 40px;
     margin: 0 auto 30px;
     padding: 0;
@@ -11446,6 +11446,15 @@ input[type='checkbox'] {
     overflow: hidden;
 }
 .blueberry .pager li.active a span { color: #ce8929; }
+@media screen and (max-width: 850px) {
+    .list-filter {
+        width: 95%;
+    }
+    .list-filter > li {
+        display: block;
+        width: auto;
+    }
+}
 @media screen and (max-width: 767px) {
     .react-slide .category-card {
         font-size: 14px;
