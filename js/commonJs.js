@@ -153,7 +153,7 @@ $(document).ready(function(){
 
 
     $('#filter-accept').on('click', function() {
-        var textInput = $('#list-filter').find('input:checked').siblings('span'),
+        var textInput = $('.list-filter').find('input:checked').siblings('span'),
             btnOpenFilter = $('#btn-open-filter');
 
         var newVal = textInput.map(function(item){
@@ -181,4 +181,14 @@ $(document).ready(function(){
         }
     });
     $( "#amount" ).text( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+
+    $('.show-block').on('click', function(){
+        var $this = $(this),
+            text = $this.text();
+        
+        $this.parent().children('.collection-values').slideToggle();
+        $this.text(text == "Показать" ? "Скрыть" : "Показать");
+    });
+
+    $('#picker').farbtastic('#color');
 });

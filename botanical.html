@@ -34,6 +34,7 @@
     <script src="js/jquery.blueberry.js"></script>
     <script src="js/jquery.jcarousel.min.js"></script>
     <script src="js/jcarousel.responsive.js"></script>
+    <script src="js/farbtastic.js"></script>
     <script src="js/commonJs.js"></script>
     <script>
         try {
@@ -477,209 +478,395 @@
         <h1>Filter by</h1>
         <hr>
 
-        <ul class="list-filter" id="list-filter">
-            <li>
-                <span>Семейные ценности</span>
+        <div class="popup-block-info">
+            <ul class="list-filter list-filter">
+                <li>
+                    <span>Цена</span>
 
-                <ul class="sub-menu">
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Носить вместе</span>
-                        </label>
-                    </li>
+                    <p>
+                        <span id="amount" style="font-weight:bold;"></span>
+                    </p>
+                    <div id="slider-range"></div>
+                </li>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Семейная шкатулка</span>
-                        </label>
-                    </li>
+                <li>
+                    <span>Металлы</span>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Подарок дочери</span>
-                        </label>
-                    </li>
+                    <button class="show-block">Показать</button>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Подарок маме</span>
-                        </label>
-                    </li>
-                </ul>
-            </li>
+                    <ul class="collection-values check-insertions">
+                        <li>
+                            <input id="Insertion117" data-value="prasiolite" value="117" title="Празиолит" class="filter-value" type="checkbox">
+                            <label for="Insertion117" title="Празиолит">
+                                Празиолит
+                            </label>
+                        </li>
 
-            <li>
-                <span>Благодарность себе</span>
+                        <li>
+                            <input id="Insertion100" data-value="shell" value="100" title="Ракушка" class="filter-value" type="checkbox">
+                            <label for="Insertion100" title="Ракушка">
+                                Ракушка
+                            </label>
+                        </li>
 
-                <ul class="sub-menu">
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Приятные мелочи</span>
-                        </label>
-                    </li>
+                        <li>
+                            <input id="Insertion65" data-value="horn" value="65" title="Рог" class="filter-value" type="checkbox">
+                            <label for="Insertion65" title="Рог">
+                                Рог
+                            </label>
+                        </li>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Я - молодец</span>
-                        </label>
-                    </li>
+                        <li>
+                            <input id="Insertion67" data-value="rhodolite" value="67" title="Родолит" class="filter-value" type="checkbox">
+                            <label for="Insertion67" title="Родолит">
+                                Родолит
+                            </label>
+                        </li>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Подчеркнуть статус</span>
-                        </label>
-                    </li>
-                </ul>
-            </li>
+                        <li>
+                            <input id="Insertion120" data-value="pink-quartz" value="120" title="Розовый кварц" class="filter-value" type="checkbox">
+                            <label for="Insertion120" title="Розовый кварц">
+                                Розовый кварц
+                            </label>
+                        </li>
 
-            <li>
-                <span>Внутреннее состояние</span>
+                        <li>
+                            <input id="Insertion68" data-value="rubellite" value="68" title="Рубеллит" class="filter-value" type="checkbox">
+                            <label for="Insertion68" title="Рубеллит">
+                                Рубеллит
+                            </label>
+                        </li>
 
-                <ul class="sub-menu">
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Романтичная</span>
-                        </label>
-                    </li>
+                        <li>
+                            <input id="Insertion69" data-value="ruby" value="69" title="Рубин" class="filter-value" type="checkbox">
+                            <label for="Insertion69" title="Рубин">
+                                Рубин
+                            </label>
+                        </li>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Бизнес леди</span>
-                        </label>
-                    </li>
+                        <li>
+                            <input id="Insertion108" data-value="ruby-zoisite" value="108" title="Рубиновый цоизит" class="filter-value" type="checkbox">
+                            <label for="Insertion108" title="Рубиновый цоизит">
+                                Рубиновый цоизит
+                            </label>
+                        </li>
+                    </ul>
+                </li>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Выделяющаяся</span>
-                        </label>
-                    </li>
+                <li>
+                    <span>Вставки</span>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Умиротворенная</span>
-                        </label>
-                    </li>
+                    <button class="show-block">Показать</button>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Роковая</span>
-                        </label>
-                    </li>
+                    <ul class="collection-values check-insertions">
+                        <li>
+                            <input id="Insertion141" data-value="sodalite" value="141" title="Содалит" class="filter-value" type="checkbox">
+                            <label for="Insertion141" title="Содалит">
+                                Содалит
+                            </label>
+                        </li>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Свободолюбивая</span>
-                        </label>
-                    </li>
-                </ul>
-            </li>
+                        <li>
+                            <input id="Insertion72" data-value="glass" value="72" title="Стекло" class="filter-value" type="checkbox">
+                            <label for="Insertion72" title="Стекло">
+                                Стекло
+                            </label>
+                        </li>
 
-            <li>
-                <span>Символ любви</span>
+                        <li>
+                            <input id="Insertion76" data-value="tanzanite" value="76" title="Танзанит" class="filter-value" type="checkbox">
+                            <label for="Insertion76" title="Танзанит">
+                                Танзанит
+                            </label>
+                        </li>
 
-                <ul class="sub-menu">
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Знак внимания</span>
-                        </label>
-                    </li>
+                        <li>
+                            <input id="Insertion263" data-value="tigers-eye" value="263" title="тигровый глаз" class="filter-value" type="checkbox">
+                            <label for="Insertion263" title="тигровый глаз">
+                                тигровый глаз
+                            </label>
+                        </li>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Влюбленность</span>
-                        </label>
-                    </li>
+                        <li>
+                            <input id="Insertion110" data-value="fabric" value="110" title="Ткань" class="filter-value" type="checkbox">
+                            <label for="Insertion110" title="Ткань">
+                                Ткань
+                            </label>
+                        </li>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Признание в любви</span>
-                        </label>
-                    </li>
+                        <li>
+                            <input id="Insertion78" data-value="topaz" value="78" title="Топаз" class="filter-value" type="checkbox">
+                            <label for="Insertion78" title="Топаз">
+                                Топаз
+                            </label>
+                        </li>
+                    </ul>
+                </li>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Растопить лед</span>
-                        </label>
-                    </li>
+                <li>
+                    <span>Типы</span>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Благодарность за то, что ты рядом</span>
-                        </label>
-                    </li>
-                </ul>
-            </li>
+                    <button class="show-block">Показать</button>
 
-            <li>
-                <span>Комфорт и уют</span>
+                    <ul class="collection-values check-insertions">
+                        <li>
+                            <input id="Insertion122" data-value="rutile-quartz" value="122" title="Рутиловый кварц" class="filter-value" type="checkbox">
+                            <label for="Insertion122" title="Рутиловый кварц">
+                                Рутиловый кварц
+                            </label>
+                        </li>
 
-                <ul class="sub-menu">
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Универсальность</span>
-                        </label>
-                    </li>
+                        <li>
+                            <input id="Insertion70" data-value="sapphire" value="70" title="Сапфир" class="filter-value" type="checkbox">
+                            <label for="Insertion70" title="Сапфир">
+                                Сапфир
+                            </label>
+                        </li>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Тепло</span>
-                        </label>
-                    </li>
+                        <li>
+                            <input id="Insertion95" data-value="swarovski" value="95" title="Сваровски" class="filter-value" type="checkbox">
+                            <label for="Insertion95" title="Сваровски">
+                                Сваровски
+                            </label>
+                        </li>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Единение с природой</span>
-                        </label>
-                    </li>
+                        <li>
+                            <input id="Insertion40" data-value="kornelian" value="40" title="Сердолик" class="filter-value" type="checkbox">
+                            <label for="Insertion40" title="Сердолик">
+                                Сердолик
+                            </label>
+                        </li>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Изящество и простота</span>
-                        </label>
-                    </li>
+                        <li>
+                            <input id="Insertion132" data-value="serpentine" value="132" title="Серпентин" class="filter-value" type="checkbox">
+                            <label for="Insertion132" title="Серпентин">
+                                Серпентин
+                            </label>
+                        </li>
 
-                    <li>
-                        <label>
-                            <input type="checkbox">
-                            <span>Удобство</span>
-                        </label>
-                    </li>
-                </ul>
-            </li>
+                        <li>
+                            <input id="Insertion119" data-value="resin" value="119" title="Смола" class="filter-value" type="checkbox">
+                            <label for="Insertion119" title="Смола">
+                                Смола
+                            </label>
+                        </li>
+                    </ul>
+                </li>
 
-            <li>
-                <span>Цена</span>
+                <li>
+                    <span>Цвета</span>
 
-                <p>
-                    <span id="amount" style="font-weight:bold;"></span>
-                </p>
-                <div id="slider-range"></div>
-            </li>
-        </ul>
+                    <button class="show-block">Показать</button>
+
+                    <div class="collection-values">
+                        <div class="form-item">
+                            <label for="color">Color:</label>
+                            <input type="text" id="color" name="color" value="#123456"/>
+                        </div>
+                        <div id="picker"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="popup-block-info">
+            <ul class="list-filter list-filter">
+                <li>
+                    <span>Семейные ценности</span>
+
+                    <ul class="sub-menu">
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Носить вместе</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Семейная шкатулка</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Подарок дочери</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Подарок маме</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span>Благодарность себе</span>
+
+                    <ul class="sub-menu">
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Приятные мелочи</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Я - молодец</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Подчеркнуть статус</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span>Внутреннее состояние</span>
+
+                    <ul class="sub-menu">
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Романтичная</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Бизнес леди</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Выделяющаяся</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Умиротворенная</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Роковая</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Свободолюбивая</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span>Символ любви</span>
+
+                    <ul class="sub-menu">
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Знак внимания</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Влюбленность</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Признание в любви</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Растопить лед</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Благодарность за то, что ты рядом</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span>Комфорт и уют</span>
+
+                    <ul class="sub-menu">
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Универсальность</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Тепло</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Единение с природой</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Изящество и простота</span>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span>Удобство</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
         <button id="filter-accept" class="filter-accept">Принять</button>
+
+
     </nav>
 </body>
 </html>
