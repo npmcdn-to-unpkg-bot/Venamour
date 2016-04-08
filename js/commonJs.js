@@ -190,13 +190,7 @@ $(document).ready(function(){
         $this.text(text == "Показать" ? "Скрыть" : "Показать");
     });
 
-
-    var demo3 = $('.colorpickerplus-embed .colorpickerplus-container');
-    demo3.colorpickerembed();
-    demo3.on('changeColor', function(e,color){
-        if(color==null)
-            $('#demo3').val('transparent').css('background-color', '#fff');//tranparent
-        else
-            $('#demo3').val(color).css('background-color', color);
+    $('.list-color li').on('click', function() {
+        $(this).toggleClass('active');
     });
 });

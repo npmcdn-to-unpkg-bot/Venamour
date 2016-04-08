@@ -1177,6 +1177,26 @@ input[type="checkbox"]:focus {
     overflow: hidden;
     background: url(../img/marker.png) no-repeat;
 }
+.list-color {
+    max-width: 230px;
+    padding: 0;
+    margin: 10px 0 0;
+    list-style: none;
+}
+.list-color li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 2px;
+    background: #000;
+    border-radius: 10px;
+    cursor: pointer;
+    text-indent: -9999px;
+    vertical-align: top;
+}
+.list-color li.active {
+    border: 2px solid #fff;
+}
 
 
 @media screen and (min-width: 768px) {
