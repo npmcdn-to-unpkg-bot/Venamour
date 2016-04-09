@@ -169,6 +169,8 @@ $(document).ready(function(){
         if(newVal.length !== 0) {
             $('#filter').removeClass('is-open');
         }
+
+        $('body').css('overflow', 'initial');
     });
 
     $( "#slider-range" ).slider({
@@ -186,7 +188,7 @@ $(document).ready(function(){
         var $this = $(this),
             text = $this.text();
         
-        $this.parent().children('.collection-values').slideToggle();
+        $this.parent().children('.sub-menu').slideToggle();
         $this.text(text == "Показать" ? "Скрыть" : "Показать");
     });
 

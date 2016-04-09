@@ -1177,6 +1177,9 @@ input[type="checkbox"]:focus {
     overflow: hidden;
     background: url(../img/marker.png) no-repeat;
 }
+.sub-menu.no-margin {
+    margin-left: 0;
+}
 .list-color {
     max-width: 230px;
     padding: 0;
