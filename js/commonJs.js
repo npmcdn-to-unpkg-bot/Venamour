@@ -170,11 +170,11 @@ $(document).ready(function(){
         });
 
         colorVal.each(function(index) {
-            console.log(colorVal);
             btnOpenFilter.append(colorVal[index]);
         });
 
         if(newVal.length !== 0 || colorVal.length !== 0) {
+            btnOpenFilter.append($('#amount').text());
             $('#filter').removeClass('is-open');
             $('body').css('overflow', 'initial');
         }
