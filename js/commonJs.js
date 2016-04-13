@@ -154,7 +154,10 @@ $(document).ready(function(){
 
     $('#filter-accept').on('click', function() {
         var textInput = $('.list-filter').find('input:checked').siblings('span'),
+            colorVal = $('.list-color .active').clone(),
             btnOpenFilter = $('#btn-open-filter');
+
+        console.log(colorVal);
 
         var newVal = textInput.map(function(item){
             return textInput[item].innerHTML;
@@ -166,11 +169,15 @@ $(document).ready(function(){
             btnOpenFilter.text(btnOpenFilter.text() + newVal[index] + ', ');
         });
 
-        if(newVal.length !== 0) {
-            $('#filter').removeClass('is-open');
-        }
+        colorVal.each(function(index) {
+            console.log(colorVal);
+            btnOpenFilter.append(colorVal[index]);
+        });
 
-        $('body').css('overflow', 'initial');
+        if(newVal.length !== 0 || colorVal.length !== 0) {
+            $('#filter').removeClass('is-open');
+            $('body').css('overflow', 'initial');
+        }
     });
 
     $( "#slider-range" ).slider({
@@ -192,7 +199,7 @@ $(document).ready(function(){
         $this.text(text == "Показать" ? "Скрыть" : "Показать");
     });
 
-    $('.list-color li').on('click', function() {
+    $('.list-color span').on('click', function() {
         $(this).toggleClass('active');
     });
 });

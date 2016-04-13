@@ -1186,18 +1186,29 @@ input[type="checkbox"]:focus {
     margin: 10px 0 0;
     list-style: none;
 }
-.list-color li {
+.color {
     display: inline-block;
     width: 15px;
     height: 15px;
     margin: 0 2px;
-    background: #000;
     border-radius: 10px;
     cursor: pointer;
-    text-indent: -9999px;
+    text-indent: -9999px !important;
     vertical-align: top;
 }
-.list-color li.active {
+.color-1 {
+    background: #f00;
+}
+.color-2 {
+    background: #fcd;
+}
+.color-3 {
+    background: #f0a;
+}
+.color-4 {
+    background: #ff0;
+}
+.list-color span.active {
     border: 2px solid #fff;
 }
 
