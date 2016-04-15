@@ -1213,11 +1213,17 @@ input[type="checkbox"]:focus {
 }
 .wrap-search-buy {
     overflow: hidden;
-    margin-top: 80px;
+    padding: 30px 0;
+    margin-top: 50px;
+    background: #9a4428;
+    text-align: center;
+}
+.wrap-search-buy form {
+    display: inline-block;
+    margin-right: 20px;
 }
 .wrap-retailers {
     overflow: hidden;
-    margin-top: 50px;
     text-align: center;
 }
 .list-retailers {
@@ -1228,6 +1234,22 @@ input[type="checkbox"]:focus {
     display: inline-block;
     padding: 10px 12px;
     vertical-align: middle;
+}
+.wrap-search-buy .text {
+    height: 28px;
+    border: 1px solid #ccc;
+}
+.btn-search,
+.btn-current-geolocation {
+    background: #ce8929;
+    border: none;
+    color: #fff;
+    transition: .3s;
+}
+.btn-search:hover,
+.btn-current-geolocation:hover {
+    background: #fff;
+    color: #ce8929;
 }
 .list-retailers img {
     opacity: .5;
