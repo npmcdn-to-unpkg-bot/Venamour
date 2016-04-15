@@ -1211,6 +1211,40 @@ input[type="checkbox"]:focus {
 .list-color span.active {
     border: 2px solid #fff;
 }
+.wrap-search-buy {
+    overflow: hidden;
+    margin-top: 80px;
+}
+.wrap-retailers {
+    overflow: hidden;
+    margin-top: 50px;
+    text-align: center;
+}
+.list-retailers {
+    list-style: none;
+    padding: 0;
+}
+.list-retailers li {
+    display: inline-block;
+    padding: 10px 12px;
+    vertical-align: middle;
+}
+.list-retailers img {
+    opacity: .5;
+}
+.list-retailers img:hover {
+    opacity: 1;
+}
+.result-search {
+    float: left;
+    width: 350px;
+}
+.result-search li {
+    list-style-type: none;
+}
+.wrap-map {
+    overflow: hidden;
+}
 
 
 @media screen and (min-width: 768px) {
