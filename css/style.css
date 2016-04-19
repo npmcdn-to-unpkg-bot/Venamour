@@ -1241,6 +1241,7 @@ input[type="checkbox"]:focus {
 }
 .btn-search,
 .btn-current-geolocation {
+    height: 28px;
     background: #ce8929;
     border: none;
     color: #fff;
@@ -1252,19 +1253,46 @@ input[type="checkbox"]:focus {
 }
 .list-search li {
     overflow: hidden;
-    margin-bottom: 10px;
     font-size: 14px;
+    text-align: center;
+    font-family: "freight-big-pro", serif;
 }
 .list-search li:last-child {
     margin-bottom: 0;
 }
+.list-search .bg {
+    background: #bc904e;
+}
+.list-search.second-variant .bg {
+    background: #e6b264;
+}
 .list-search .wrap-img,
 .list-search .wrap-desc {
-    float: left;
+    display: block;
+    overflow: hidden;
     width: 50%;
 }
 .list-search .wrap-desc {
-    padding: 0 5px 0 10px;
+    float: right;
+    padding: 10px 5px 0 10px;
+    background: #bc904e;
+}
+.list-search li:nth-child(2n + 1) .wrap-desc {
+    float: left;
+}
+.list-search.second-variant li:nth-child(2n + 1) .wrap-desc {
+    float: right;
+    background: #e6b264;
+}
+.list-search .show-block {
+    margin-left: auto;
+    margin-right: auto;
+    color: #ce8929;
+    background: #fff;
+}
+.list-search .show-block:hover {
+    background: #ce8929;
+    color: #fff;
 }
 .list-search img {
     width: 100%;
@@ -1289,11 +1317,12 @@ input[type="checkbox"]:focus {
 }
 .list-search .sub-title {
     display: block;
-    text-transform: uppercase;
+    font-style: italic;
 }
 .list-search .text {
     display: block;
     margin-bottom: 15px;
+    font-size: 20px;
 }
 .list-search a:hover {
     color: #000;
@@ -1317,6 +1346,11 @@ input[type="checkbox"]:focus {
 }
 .result-search li {
     list-style-type: none;
+}
+.result-search hr {
+    width: 120px;
+    margin: 10px auto;
+    border-color: rgba(0,0,0,0.2);
 }
 .wrap-map {
     overflow: hidden;

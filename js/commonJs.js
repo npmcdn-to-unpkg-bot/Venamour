@@ -191,14 +191,6 @@ $(document).ready(function(){
     });
     $( "#amount" ).text( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 
-    $('.show-block').on('click', function(){
-        var $this = $(this),
-            text = $this.text();
-        
-        $this.parent().children('.sub-menu').slideToggle();
-        $this.text(text == "Показать" ? "Скрыть" : "Показать");
-    });
-
     $('.list-color span').on('click', function() {
         $(this).toggleClass('active');
     });
