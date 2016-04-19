@@ -1246,6 +1246,58 @@ input[type="checkbox"]:focus {
     color: #fff;
     transition: .3s;
 }
+.list-search {
+    padding: 0;
+    margin: 0;
+}
+.list-search li {
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.list-search li:last-child {
+    margin-bottom: 0;
+}
+.list-search .wrap-img,
+.list-search .wrap-desc {
+    float: left;
+    width: 50%;
+}
+.list-search .wrap-desc {
+    padding: 5px 5px 0 10px;
+}
+.list-search img {
+    width: 100%;
+    vertical-align: top;
+}
+.list-search .num {
+    display: inline-block;
+    background-color: #9a4428;
+    width: 25px;
+    margin-right: 10px;
+    font-size: 17px;
+    border-radius: 30px;
+    color: #fff;
+    text-align: center;
+}
+.list-search .title {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+}
+.list-search .sub-title {
+    display: block;
+    text-transform: uppercase;
+}
+.list-search .text {
+    display: block;
+    margin-bottom: 15px;
+}
+.list-search a:hover {
+    color: #000;
+}
 .btn-search:hover,
 .btn-current-geolocation:hover {
     background: #fff;
@@ -1258,8 +1310,10 @@ input[type="checkbox"]:focus {
     opacity: 1;
 }
 .result-search {
+    overflow: auto;
     float: left;
-    width: 350px;
+    width: 500px;
+    height: 440px;
 }
 .result-search li {
     list-style-type: none;
