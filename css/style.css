@@ -1264,24 +1264,24 @@ input[type="checkbox"]:focus {
     width: 50%;
 }
 .list-search .wrap-desc {
-    padding: 5px 5px 0 10px;
+    padding: 0 5px 0 10px;
 }
 .list-search img {
     width: 100%;
     vertical-align: top;
 }
 .list-search .num {
-    display: inline-block;
+    float: left;
     background-color: #9a4428;
     width: 25px;
-    margin-right: 10px;
+    margin: 5px 10px 0 0;
     font-size: 17px;
     border-radius: 30px;
     color: #fff;
     text-align: center;
 }
 .list-search .title {
-    display: inline-block;
+    display: block;
     margin-bottom: 10px;
     font-size: 22px;
     font-weight: bold;
