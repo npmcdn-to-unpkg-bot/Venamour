@@ -1260,28 +1260,19 @@ input[type="checkbox"]:focus {
 .list-search li:last-child {
     margin-bottom: 0;
 }
-.list-search .bg {
-    background: #bc904e;
-}
-.list-search.second-variant .bg {
-    background: #e6b264;
-}
 .list-search .wrap-img,
 .list-search .wrap-desc {
-    display: block;
+    display: table-cell;
     overflow: hidden;
     width: 50%;
+    vertical-align: middle;
 }
 .list-search .wrap-desc {
-    float: right;
+    height: 100%;
     padding: 10px 5px 0 10px;
     background: #bc904e;
 }
 .list-search li:nth-child(2n + 1) .wrap-desc {
-    float: left;
-}
-.list-search.second-variant li:nth-child(2n + 1) .wrap-desc {
-    float: right;
     background: #e6b264;
 }
 .list-search .show-block {
